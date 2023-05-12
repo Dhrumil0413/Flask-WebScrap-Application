@@ -74,7 +74,7 @@ def index():
                 reviews.append(mydict)
             logging.info("log my final result {}".format(reviews))
 
-            uri = "mongodb+srv://DatabaseUserDhrumil:DatabaseUserVaghasiya@cluster1.2mouzbj.mongodb.net/?retryWrites=true&w=majority"
+            uri = "mongodb+srv://username:<password>@cluster1.2mouzbj.mongodb.net/?retryWrites=true&w=majority"
             client = pymongo.MongoClient(uri)
             db = client['flask_webscrapper']
             collection = db['flask_Scrapper']
